@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>利用規約 / Terms of Service - DeepRead</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans JP", sans-serif;
+      background: #fff;
+      color: #1d1d1f;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      border-bottom: 1px solid #e5e5e7;
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 56px;
+    }
+    .site-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1d1d1f;
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+    nav { display: flex; gap: 24px; align-items: center; }
+    nav a {
+      font-size: 14px;
+      color: #6e6e73;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a:hover, nav a.active { color: #1d1d1f; }
+    .lang-switch {
+      display: flex;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-left: 24px;
+    }
+    .lang-btn {
+      padding: 4px 12px;
+      font-size: 13px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: #6e6e73;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .lang-btn.active {
+      background: #1d1d1f;
+      color: #fff;
+    }
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 60px;
+      width: 100%;
+    }
+    .page-title {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+    .last-updated {
+      font-size: 14px;
+      color: #86868b;
+      margin-bottom: 40px;
+    }
+    .lang-ja, .lang-en { transition: opacity 0.25s ease; }
+    .lang-hidden { display: none !important; }
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 36px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+    p { margin-bottom: 12px; font-size: 15px; color: #333; }
+    ul { margin: 8px 0 16px 20px; font-size: 15px; color: #333; }
+    li { margin-bottom: 6px; }
+    .note {
+      background: #f5f5f7;
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 14px;
+      color: #6e6e73;
+      margin: 16px 0;
+    }
+    a.email-link { color: #0066cc; text-decoration: none; }
+    a.email-link:hover { text-decoration: underline; }
+    footer {
+      border-top: 1px solid #e5e5e7;
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: #86868b;
+    }
+    @media (max-width: 600px) {
+      .header-inner { flex-wrap: wrap; height: auto; padding: 12px 0; gap: 8px; }
+      nav { gap: 16px; }
+      .lang-switch { margin-left: 0; }
+      .page-title { font-size: 24px; }
+      main { padding: 32px 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-title">DeepRead</a>
+      <nav>
+        <a href="index.html" class="lang-ja">トップ</a>
+        <a href="index.html" class="lang-en" style="display:none;">Top</a>
+        <a href="terms.html" class="active lang-ja">利用規約</a>
+        <a href="terms.html" class="active lang-en" style="display:none;">Terms</a>
+        <a href="privacy.html" class="lang-ja">プライバシーポリシー</a>
+        <a href="privacy.html" class="lang-en" style="display:none;">Privacy Policy</a>
+        <div class="lang-switch">
+          <button class="lang-btn active" onclick="setLang('ja')">日本語</button>
+          <button class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Japanese -->
+    <div class="lang-ja">
+      <h1 class="page-title">利用規約</h1>
+      <p class="last-updated">最終更新日: 2026年3月9日</p>
+
+      <h2>1. はじめに</h2>
+      <p>本利用規約（以下「本規約」）は、DeepRead（以下「本アプリ」）の利用条件を定めるものです。本アプリをダウンロードまたは使用することにより、本規約に同意したものとみなされます。</p>
+
+      <h2>2. サービスの概要</h2>
+      <p>DeepRead は、PDF・EPUB 文書の閲覧・ハイライト・注釈・間隔反復レビュー・学習統計を提供する iOS アプリケーションです。</p>
+
+      <h2>3. サブスクリプションおよびアプリ内課金</h2>
+
+      <h3>3.1 料金プラン</h3>
+      <ul>
+        <li><strong>月額</strong> $0.99/月（自動更新サブスクリプション）</li>
+        <li><strong>年額</strong> $4.99/年（自動更新サブスクリプション）</li>
+        <li><strong>買い切り</strong> $14.99（一回限りの購入）</li>
+      </ul>
+
+      <h3>3.2 自動更新</h3>
+      <p>サブスクリプション（月額・年額）は、現在の期間終了の少なくとも24時間前までにキャンセルしない限り、自動的に更新されます。更新料は、現在の期間終了の24時間以内に Apple ID アカウントに請求されます。買い切りプラン（$14.99）は一回限りの購入であり、自動更新はありません。</p>
+
+      <h3>3.3 支払い</h3>
+      <p>すべての支払いは、Apple ID に関連付けられた支払い方法を通じて Apple により処理されます。決済インフラプロバイダーとして RevenueCat を使用しています。</p>
+
+      <h3>3.4 キャンセル・解約</h3>
+      <p>サブスクリプションの管理および自動更新のキャンセルは、購入後に端末の「設定」→「Apple ID」→「サブスクリプション」から行えます。キャンセルは現在の課金期間の終了時に有効となります。期間中の返金は行われません。</p>
+
+      <h3>3.5 購入の復元</h3>
+      <p>機種変更やアプリの再インストール後は、アプリ内の「購入を復元」機能を使用して、以前の購入を復元できます。</p>
+
+      <h2>4. 無料機能と Pro 機能</h2>
+      <h3>無料</h3>
+      <ul>
+        <li>PDF/EPUB閲覧</li>
+        <li>単色ハイライト</li>
+        <li>基本的なブックマーク</li>
+      </ul>
+      <h3>Pro</h3>
+      <ul>
+        <li>複数色ハイライト</li>
+        <li>メモ・注釈</li>
+        <li>間隔反復レビュー</li>
+        <li>学習統計</li>
+        <li>全テーマ</li>
+      </ul>
+
+      <h2>5. ユーザーの責任</h2>
+      <p>合法的な目的でのみ使用。アカウント情報の管理責任。リバースエンジニアリング、改変、再配布禁止。</p>
+
+      <h2>6. 知的財産権</h2>
+      <p>すべての知的財産権は開発者に帰属。非独占的かつ譲渡不可のライセンス付与。</p>
+
+      <h2>7. 免責事項</h2>
+      <p>「現状のまま」提供。直接的・間接的損害について責任を負わない。可用性、正確性、完全性の保証なし。</p>
+
+      <h2>8. サービスの変更・終了</h2>
+      <p>事前通知なく変更・停止・終了する権利を留保。料金変更は事前通知。</p>
+
+      <h2>9. 準拠法と紛争解決</h2>
+      <p>日本法に準拠。東京地方裁判所を専属的合意管轄裁判所。</p>
+
+      <h2>10. 規約の変更</h2>
+      <p>随時更新する権利を留保。重要な変更はアプリ内またはウェブサイトで通知。</p>
+
+      <h2>11. お問い合わせ</h2>
+      <p>メール: <a href="mailto:support@techlive.jp" class="email-link">support@techlive.jp</a></p>
+    </div>
+
+    <!-- English -->
+    <div class="lang-en">
+      <h1 class="page-title">Terms of Service</h1>
+      <p class="last-updated">Last updated: March 9, 2026</p>
+
+      <h2>1. Introduction</h2>
+      <p>These Terms of Service ("Terms") govern your use of DeepRead ("the App"). By downloading or using the App, you agree to be bound by these Terms.</p>
+
+      <h2>2. Service Overview</h2>
+      <p>DeepRead is an iOS application that provides PDF and EPUB document reading, highlighting, annotations, spaced repetition review, and learning statistics.</p>
+
+      <h2>3. Subscriptions and In-App Purchases</h2>
+
+      <h3>3.1 Pricing</h3>
+      <ul>
+        <li><strong>Monthly</strong> $0.99/month (Auto-renewable subscription)</li>
+        <li><strong>Annual</strong> $4.99/year (Auto-renewable subscription)</li>
+        <li><strong>Lifetime</strong> $14.99 (One-time purchase)</li>
+      </ul>
+
+      <h3>3.2 Auto-Renewal</h3>
+      <p>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period. The Lifetime plan is a one-time purchase and does not auto-renew.</p>
+
+      <h3>3.3 Payment</h3>
+      <p>All payments are processed by Apple through the payment method associated with your Apple ID. RevenueCat is used as the payment infrastructure provider.</p>
+
+      <h3>3.4 Cancellation</h3>
+      <p>You can manage your subscription and turn off auto-renewal in Settings &gt; Apple ID &gt; Subscriptions. Cancellation takes effect at the end of the current billing period. No refunds.</p>
+
+      <h3>3.5 Restore Purchases</h3>
+      <p>After changing devices or reinstalling, use "Restore Purchases" to restore previous purchases.</p>
+
+      <h2>4. Free and Pro Features</h2>
+      <h3>Free</h3>
+      <ul>
+        <li>PDF/EPUB reading</li>
+        <li>Single-color highlighting</li>
+        <li>Basic bookmarking</li>
+      </ul>
+      <h3>Pro</h3>
+      <ul>
+        <li>Multi-color highlighting</li>
+        <li>Notes and annotations</li>
+        <li>Spaced repetition review</li>
+        <li>Learning statistics</li>
+        <li>All themes</li>
+      </ul>
+
+      <h2>5. User Responsibilities</h2>
+      <p>Lawful purposes only. Account management responsibility. No reverse engineering, modification, or redistribution.</p>
+
+      <h2>6. Intellectual Property</h2>
+      <p>All IP rights belong to developer. Non-exclusive, non-transferable license granted.</p>
+
+      <h2>7. Disclaimer</h2>
+      <p>Provided "as is." No liability for direct or indirect damages. No warranties on availability, accuracy, or completeness.</p>
+
+      <h2>8. Changes and Termination</h2>
+      <p>Right to modify, suspend, or terminate without notice. Pricing changes communicated in advance.</p>
+
+      <h2>9. Governing Law</h2>
+      <p>Laws of Japan. Tokyo District Court exclusive jurisdiction.</p>
+
+      <h2>10. Changes to Terms</h2>
+      <p>Right to update at any time. Significant changes communicated via App or website.</p>
+
+      <h2>11. Contact</h2>
+      <p>Email: <a href="mailto:support@techlive.jp" class="email-link">support@techlive.jp</a></p>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 DeepRead</footer>
+
+  <script>
+    function setLang(lang) {
+      localStorage.setItem('deepread-lang', lang);
+      applyLang(lang);
+    }
+    function applyLang(lang) {
+      document.querySelectorAll('.lang-ja').forEach(function(el) {
+        el.classList.toggle('lang-hidden', lang !== 'ja');
+        el.removeAttribute('style');
+      });
+      document.querySelectorAll('.lang-en').forEach(function(el) {
+        el.classList.toggle('lang-hidden', lang !== 'en');
+        el.removeAttribute('style');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.textContent.trim() === (lang === 'ja' ? '日本語' : 'English'));
+      });
+      document.documentElement.lang = lang;
+    }
+    (function() {
+      var lang = localStorage.getItem('deepread-lang') || 'en';
+      applyLang(lang);
+    })();
+  </script>
+</body>
+</html>

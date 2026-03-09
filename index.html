@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepRead - Legal</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans JP", sans-serif;
+      background: #fff;
+      color: #1d1d1f;
+      line-height: 1.7;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      border-bottom: 1px solid #e5e5e7;
+      padding: 0 24px;
+    }
+    .header-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 56px;
+    }
+    .site-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1d1d1f;
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+    nav { display: flex; gap: 24px; align-items: center; }
+    nav a {
+      font-size: 14px;
+      color: #6e6e73;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    nav a:hover, nav a.active { color: #1d1d1f; }
+    .lang-switch {
+      display: flex;
+      border: 1px solid #d2d2d7;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-left: 24px;
+    }
+    .lang-btn {
+      padding: 4px 12px;
+      font-size: 13px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      color: #6e6e73;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .lang-btn.active {
+      background: #1d1d1f;
+      color: #fff;
+    }
+    main {
+      flex: 1;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 80px 24px 60px;
+      width: 100%;
+    }
+    .hero { text-align: center; margin-bottom: 64px; }
+    .hero h1 {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      font-size: 17px;
+      color: #6e6e73;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #e5e5e7;
+      border-radius: 16px;
+      padding: 32px 28px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      border-color: #d2d2d7;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .card h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card p {
+      font-size: 14px;
+      color: #6e6e73;
+      line-height: 1.6;
+    }
+    .lang-ja, .lang-en { transition: opacity 0.25s ease; }
+    .lang-hidden { display: none !important; }
+    footer {
+      border-top: 1px solid #e5e5e7;
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: #86868b;
+    }
+    @media (max-width: 600px) {
+      .header-inner { flex-wrap: wrap; height: auto; padding: 12px 0; gap: 8px; }
+      nav { gap: 16px; }
+      .lang-switch { margin-left: 0; }
+      .card-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 28px; }
+      main { padding: 48px 24px 40px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-title">DeepRead</a>
+      <nav>
+        <a href="index.html" class="active lang-ja">トップ</a>
+        <a href="index.html" class="active lang-en" style="display:none;">Top</a>
+        <a href="terms.html" class="lang-ja">利用規約</a>
+        <a href="terms.html" class="lang-en" style="display:none;">Terms</a>
+        <a href="privacy.html" class="lang-ja">プライバシーポリシー</a>
+        <a href="privacy.html" class="lang-en" style="display:none;">Privacy Policy</a>
+        <div class="lang-switch">
+          <button class="lang-btn active" onclick="setLang('ja')">日本語</button>
+          <button class="lang-btn" onclick="setLang('en')">English</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="lang-ja">
+        <h1>法的情報</h1>
+        <p>DeepRead のご利用に関する規約・ポリシーをご確認ください。</p>
+      </div>
+      <div class="lang-en">
+        <h1>Legal Information</h1>
+        <p>Review the terms and policies for using DeepRead.</p>
+      </div>
+    </div>
+
+    <div class="card-grid">
+      <a href="terms.html" class="card">
+        <div class="lang-ja">
+          <h2>利用規約</h2>
+          <p>サービスのご利用条件、サブスクリプション、お支払いについて。</p>
+        </div>
+        <div class="lang-en">
+          <h2>Terms of Service</h2>
+          <p>Usage conditions, subscriptions, and payment information.</p>
+        </div>
+      </a>
+      <a href="privacy.html" class="card">
+        <div class="lang-ja">
+          <h2>プライバシーポリシー</h2>
+          <p>個人情報の取り扱い、データ収集、セキュリティについて。</p>
+        </div>
+        <div class="lang-en">
+          <h2>Privacy Policy</h2>
+          <p>Personal data handling, data collection, and security.</p>
+        </div>
+      </a>
+    </div>
+  </main>
+
+  <footer>&copy; 2026 DeepRead</footer>
+
+  <script>
+    function setLang(lang) {
+      localStorage.setItem('deepread-lang', lang);
+      applyLang(lang);
+    }
+    function applyLang(lang) {
+      document.querySelectorAll('.lang-ja').forEach(function(el) {
+        el.classList.toggle('lang-hidden', lang !== 'ja');
+        el.removeAttribute('style');
+      });
+      document.querySelectorAll('.lang-en').forEach(function(el) {
+        el.classList.toggle('lang-hidden', lang !== 'en');
+        el.removeAttribute('style');
+      });
+      document.querySelectorAll('.lang-btn').forEach(function(btn) {
+        btn.classList.toggle('active', btn.textContent.trim() === (lang === 'ja' ? '日本語' : 'English'));
+      });
+      document.documentElement.lang = lang;
+    }
+    (function() {
+      var lang = localStorage.getItem('deepread-lang') || 'en';
+      applyLang(lang);
+    })();
+  </script>
+</body>
+</html>
